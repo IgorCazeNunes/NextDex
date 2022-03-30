@@ -2,7 +2,7 @@
   "name": "ReactDex",
   "short_name": "ReactDex",
   "icons": [{
-    "src": "/img/favicon.ico",
+    "src": "/img/icons/favicon.ico",
     "type": "image/ico",
     "sizes": "96x96"
   }],
