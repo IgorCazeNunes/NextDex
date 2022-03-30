@@ -1,0 +1,13 @@
+{
+  "name": "ReactDex",
+  "short_name": "ReactDex",
+  "icons": [{
+    "src": "/img/favicon.ico",
+    "type": "image/ico",
+    "sizes": "96x96"
+  }],
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#ea5d60"
+}
