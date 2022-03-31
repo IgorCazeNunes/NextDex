@@ -1,5 +1,9 @@
-import Main from 'components/Main';
+import { Badge } from 'components';
 
 export default function Home() {
-  return <Main />;
+  return (
+    <>
+      <h1>ReactDex</h1>
+    </>
+  );
 }
