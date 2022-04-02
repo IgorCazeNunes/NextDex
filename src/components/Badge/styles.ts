@@ -10,7 +10,8 @@ export const Container = styled.span<BadgeProps>`
     justify-content: center;
     gap: 0.5rem;
 
-    background: ${theme.colors.type.color[type || 'normal']};
+    background: ${theme.colors.type.color[type] ||
+    theme.colors.type.color['normal']};
     border-radius: 0.3rem;
 
     color: ${theme.colors.text.white};

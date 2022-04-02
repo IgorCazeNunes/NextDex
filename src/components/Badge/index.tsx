@@ -5,7 +5,7 @@ import { TypeIcon } from 'components';
 import * as S from './styles';
 
 export interface BadgeProps {
-  type?:
+  type:
     | 'bug'
     | 'dark'
     | 'dragon'
@@ -26,11 +26,11 @@ export interface BadgeProps {
     | 'water';
 }
 
-const Badge: React.FC<BadgeProps> = ({ type }: BadgeProps) => (
+const Badge: React.FC<BadgeProps> = ({ type = 'normal' }: BadgeProps) => (
   <S.Container type={type}>
     <TypeIcon type={type} />
 
-    {type || 'normal'}
+    {type}
   </S.Container>
 );
 
