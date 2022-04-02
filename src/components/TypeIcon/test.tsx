@@ -1,10 +1,12 @@
 import { render, screen } from '@testing-library/react';
 
-import TypeIcon from '.';
+import TypeIcon, { IconProps } from '.';
 
 describe('<TypeIcon />', () => {
-  it('Should render default icon', () => {
-    render(<TypeIcon />);
+  it('Should render default icon with incorrect type', () => {
+    const iconProps = { type: '???' } as unknown as IconProps;
+
+    render(<TypeIcon {...iconProps} />);
 
     expect(screen.getByTestId('TypeIcon-normal')).toBeInTheDocument();
   });
