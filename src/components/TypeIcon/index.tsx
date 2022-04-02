@@ -23,7 +23,7 @@ const svgProps = {
 };
 
 export interface IconProps {
-  type?:
+  type:
     | 'bug'
     | 'dark'
     | 'dragon'
@@ -66,7 +66,7 @@ const TypeIcon = ({ type }: IconProps) => {
     water: <WaterSvg {...svgProps} />,
   };
 
-  return Svg[type || 'normal'];
+  return Svg[type] || Svg['normal'];
 };
 
 export default TypeIcon;
