@@ -26,11 +26,11 @@ export interface BadgeProps {
     | 'water';
 }
 
-const Badge: React.FC<BadgeProps> = ({ type = 'normal' }: BadgeProps) => (
+const Badge: React.FC<BadgeProps> = ({ type }: BadgeProps) => (
   <S.Container type={type}>
     <TypeIcon type={type} />
 
-    {type}
+    {type || 'normal'}
   </S.Container>
 );
 
