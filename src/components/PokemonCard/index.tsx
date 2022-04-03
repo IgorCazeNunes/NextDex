@@ -1,11 +1,40 @@
 import React from 'react';
 
+import { TypeBadge } from 'components';
+
+import { TPokemonType } from 'components/TypeBadge';
+
 import * as S from './styles';
 
-const PokemonCard = () => (
-  <S.Container>
-    <h1>Pokemon Card</h1>
-  </S.Container>
-);
+export interface IPokemonCardProps {
+  id: string;
+  name: string;
+  types: TPokemonType[];
+  image?: string;
+}
+
+const PokemonCard = ({ id, name, types, image }: IPokemonCardProps) => {
+  return (
+    <S.Container>
+      <S.Content type={types[0]} data-testid={`PokemonCard-${name}`}>
+        <S.MainContent>
+          <span>#{id}</span>
+
+          <h3>{name}</h3>
+
+          <ul>
+            {types.map((type) => (
+              <li key={type} data-testid={`PokemonCard-Type`}>
+                <TypeBadge type={type} />
+              </li>
+            ))}
+          </ul>
+        </S.MainContent>
+
+        {image ? <img src={image} alt={`Front image of ${name}`} /> : null}
+      </S.Content>
+    </S.Container>
+  );
+};
 
 export default PokemonCard;
