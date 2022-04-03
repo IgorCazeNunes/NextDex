@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { TypeIcon } from 'components';
 
 import * as S from './styles';
@@ -26,7 +24,7 @@ export interface BadgeProps {
     | 'water';
 }
 
-const Badge: React.FC<BadgeProps> = ({ type = 'normal' }: BadgeProps) => (
+const Badge = ({ type = 'normal' }: BadgeProps) => (
   <S.Container type={type}>
     <TypeIcon type={type} />
 
