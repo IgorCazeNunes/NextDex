@@ -17,18 +17,18 @@ import RockSvg from 'assets/vectors/types/rock.svg';
 import SteelSvg from 'assets/vectors/types/steel.svg';
 import WaterSvg from 'assets/vectors/types/water.svg';
 
-import { PokemonType } from 'components/Badge';
+import { TPokemonType } from 'components/Badge';
 
 const svgProps = {
   role: 'img',
   'aria-label': `Type Icon`,
 };
 
-interface IconProps {
-  type: PokemonType;
+interface IIconProps {
+  type: TPokemonType;
 }
 
-const TypeIcon = ({ type }: IconProps) => {
+const TypeIcon = ({ type }: IIconProps) => {
   const Svg = {
     bug: <BugSvg data-testid="TypeIcon-bug" {...svgProps} />,
     dark: <DarkSvg {...svgProps} />,

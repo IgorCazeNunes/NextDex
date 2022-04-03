@@ -2,7 +2,7 @@ import { TypeIcon } from 'components';
 
 import * as S from './styles';
 
-export type PokemonType =
+export type TPokemonType =
   | 'bug'
   | 'dark'
   | 'dragon'
@@ -22,11 +22,11 @@ export type PokemonType =
   | 'steel'
   | 'water';
 
-export interface BadgeProps {
-  type: PokemonType;
+export interface IBadgeProps {
+  type: TPokemonType;
 }
 
-const Badge = ({ type = 'normal' }: BadgeProps) => (
+const Badge = ({ type = 'normal' }: IBadgeProps) => (
   <S.Container type={type}>
     <TypeIcon type={type} />
 
