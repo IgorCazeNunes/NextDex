@@ -17,7 +17,7 @@ import RockSvg from 'assets/vectors/types/rock.svg';
 import SteelSvg from 'assets/vectors/types/steel.svg';
 import WaterSvg from 'assets/vectors/types/water.svg';
 
-import { TPokemonType } from 'components/Badge';
+import { TPokemonType } from 'components/TypeBadge';
 
 const svgProps = {
   role: 'img',

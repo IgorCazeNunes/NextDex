@@ -1,4 +1,4 @@
-import Badge from './Badge';
+import TypeBadge from './TypeBadge';
 import TypeIcon from './TypeIcon';
 
-export { Badge, TypeIcon };
+export { TypeBadge, TypeIcon };

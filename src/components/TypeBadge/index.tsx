@@ -22,11 +22,11 @@ export type TPokemonType =
   | 'steel'
   | 'water';
 
-export interface IBadgeProps {
+export interface ITypeBadgeProps {
   type: TPokemonType;
 }
 
-const Badge = ({ type = 'normal' }: IBadgeProps) => (
+const TypeBadge = ({ type = 'normal' }: ITypeBadgeProps) => (
   <S.Container type={type}>
     <TypeIcon type={type} />
 
@@ -34,4 +34,4 @@ const Badge = ({ type = 'normal' }: IBadgeProps) => (
   </S.Container>
 );
 
-export default Badge;
+export default TypeBadge;

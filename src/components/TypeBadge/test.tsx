@@ -1,11 +1,11 @@
 import { renderWithTheme } from 'utils/tests/helper';
 import { screen } from '@testing-library/react';
 
-import Badge from '.';
+import TypeBadge from '.';
 
-describe('<Badge />', () => {
+describe('<TypeBadge />', () => {
   it('Should render default Badge with correct text and background', () => {
-    renderWithTheme(<Badge />);
+    renderWithTheme(<TypeBadge />);
 
     expect(screen.getByText('normal')).toHaveStyle({
       background: '#9da0aa',
@@ -13,7 +13,7 @@ describe('<Badge />', () => {
   });
 
   it('Should render typed Badge with correct text and background', () => {
-    renderWithTheme(<Badge type="dragon" />);
+    renderWithTheme(<TypeBadge type="dragon" />);
 
     expect(screen.getByText('dragon')).toBeInTheDocument();
     expect(screen.getByText('dragon')).toHaveStyle({

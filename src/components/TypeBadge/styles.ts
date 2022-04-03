@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-import { IBadgeProps } from './index';
+import { ITypeBadgeProps } from './index';
 
-export const Container = styled.span<IBadgeProps>`
+export const Container = styled.span<ITypeBadgeProps>`
   ${({ theme, type }) => css`
     display: inline-flex;
     padding: 0.5rem;
