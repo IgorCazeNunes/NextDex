@@ -17,31 +17,15 @@ import RockSvg from 'assets/vectors/types/rock.svg';
 import SteelSvg from 'assets/vectors/types/steel.svg';
 import WaterSvg from 'assets/vectors/types/water.svg';
 
+import { PokemonType } from 'components/Badge';
+
 const svgProps = {
   role: 'img',
   'aria-label': `Type Icon`,
 };
 
-export interface IconProps {
-  type:
-    | 'bug'
-    | 'dark'
-    | 'dragon'
-    | 'electric'
-    | 'fairy'
-    | 'fighting'
-    | 'fire'
-    | 'flying'
-    | 'ghost'
-    | 'grass'
-    | 'ground'
-    | 'ice'
-    | 'normal'
-    | 'poison'
-    | 'psychic'
-    | 'rock'
-    | 'steel'
-    | 'water';
+interface IconProps {
+  type: PokemonType;
 }
 
 const TypeIcon = ({ type }: IconProps) => {

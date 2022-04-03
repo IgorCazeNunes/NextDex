@@ -2,26 +2,28 @@ import { TypeIcon } from 'components';
 
 import * as S from './styles';
 
+export type PokemonType =
+  | 'bug'
+  | 'dark'
+  | 'dragon'
+  | 'electric'
+  | 'fairy'
+  | 'fighting'
+  | 'fire'
+  | 'flying'
+  | 'ghost'
+  | 'grass'
+  | 'ground'
+  | 'ice'
+  | 'normal'
+  | 'poison'
+  | 'psychic'
+  | 'rock'
+  | 'steel'
+  | 'water';
+
 export interface BadgeProps {
-  type:
-    | 'bug'
-    | 'dark'
-    | 'dragon'
-    | 'electric'
-    | 'fairy'
-    | 'fighting'
-    | 'fire'
-    | 'flying'
-    | 'ghost'
-    | 'grass'
-    | 'ground'
-    | 'ice'
-    | 'normal'
-    | 'poison'
-    | 'psychic'
-    | 'rock'
-    | 'steel'
-    | 'water';
+  type: PokemonType;
 }
 
 const Badge = ({ type = 'normal' }: BadgeProps) => (
