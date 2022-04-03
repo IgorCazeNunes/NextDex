@@ -26,7 +26,7 @@ export interface ITypeBadgeProps {
   type: TPokemonType;
 }
 
-const TypeBadge = ({ type = 'normal' }: ITypeBadgeProps) => (
+const TypeBadge = ({ type }: ITypeBadgeProps) => (
   <S.Container type={type}>
     <TypeIcon type={type} />
 
