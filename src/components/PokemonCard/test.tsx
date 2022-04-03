@@ -22,14 +22,14 @@ describe('<PokemonCard />', () => {
       <PokemonCard id="001" name="Charizard" types={['fire', 'flying']} />,
     );
 
+    expect(screen.getByText('#001')).toBeInTheDocument();
+
     expect(
       screen.getByRole('heading', { name: /Charizard/i }),
     ).toBeInTheDocument();
 
-    expect(screen.getByText('#001')).toBeInTheDocument();
-
     expect(screen.getByTestId('PokemonCard-Charizard')).toHaveStyle({
-      background: '#f78551',
+      background: '#ffa756',
     });
   });
 
