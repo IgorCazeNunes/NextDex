@@ -1,17 +1,19 @@
 import { render, screen } from '@testing-library/react';
 
-import TypeIcon, { IconProps } from '.';
+import { TPokemonType } from 'components/TypeBadge';
+
+import TypeIcon from '.';
 
 describe('<TypeIcon />', () => {
-  it('Should render default icon with incorrect type', () => {
-    const iconProps = { type: '???' } as unknown as IconProps;
+  it('Should render default Icon with incorrect type prop.', () => {
+    const type = '???' as unknown as TPokemonType;
 
-    render(<TypeIcon {...iconProps} />);
+    render(<TypeIcon type={type} />);
 
     expect(screen.getByTestId('TypeIcon-normal')).toBeInTheDocument();
   });
 
-  it('Should render correct icon based in prop', () => {
+  it('Should render Icon based on type prop.', () => {
     render(<TypeIcon type="bug" />);
 
     expect(screen.getByTestId('TypeIcon-bug')).toBeInTheDocument();
