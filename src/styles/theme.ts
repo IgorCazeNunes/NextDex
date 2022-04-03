@@ -93,7 +93,7 @@ export default {
       white: '#ffffff',
       black: '#17171b',
       grey: '#747476',
-      number: '#17171b.6',
+      number: 'rgba(23, 23, 27, 0.6)',
     },
     height: {
       short: '#ffc5e6',
