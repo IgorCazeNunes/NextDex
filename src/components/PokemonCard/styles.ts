@@ -16,8 +16,10 @@ export const Content = styled.section<{ type: TPokemonType }>`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 11.5rem;
     gap: ${theme.spacings.xxsmall};
+
+    height: 11.5rem;
+    width: 100%;
 
     padding: ${theme.spacings.xsmall};
 
