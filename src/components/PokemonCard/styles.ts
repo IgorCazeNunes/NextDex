@@ -1,3 +1,6 @@
+import dottedSmall from 'assets/imgs/dottedSmall.png';
+import pokeball from 'assets/imgs/pokeball-white.png';
+
 import styled, { css } from 'styled-components';
 
 import { TPokemonType } from 'components/TypeBadge';
@@ -31,6 +34,12 @@ export const Content = styled.section<{ type: TPokemonType }>`
 
     background: ${theme.colors.type.background[type] ||
     theme.colors.type.background['normal']};
+
+    background-image: url(${dottedSmall.src}), url(${pokeball.src});
+    background-repeat: no-repeat, no-repeat;
+    background-size: 10rem, 14rem;
+    background-position: 30% 5%, 100% 50%;
+
     border-radius: ${theme.border.radius};
 
     img {
@@ -66,6 +75,9 @@ export const MainContent = styled.aside`
     @media (${theme.breakpoints.lg}) {
       justify-content: space-around;
       height: 100%;
+    }
+
+    .dottedSmall {
     }
 
     h3 {
