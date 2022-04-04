@@ -3,11 +3,17 @@ import styled, { css } from 'styled-components';
 import { TPokemonType } from 'components/TypeBadge';
 
 export const Container = styled.li`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 
-  height: 14rem;
+    height: 14rem;
+
+    @media (${theme.breakpoints.lg}) {
+      height: 17rem;
+    }
+  `}
 `;
 
 export const Content = styled.section<{ type: TPokemonType }>`
@@ -33,6 +39,17 @@ export const Content = styled.section<{ type: TPokemonType }>`
 
       margin-bottom: ${theme.spacings.large};
     }
+
+    @media (${theme.breakpoints.lg}) {
+      height: 14rem;
+
+      img {
+        width: 16rem;
+        height: 16rem;
+
+        margin-bottom: ${theme.spacings.xxlarge};
+      }
+    }
   `}
 `;
 
@@ -45,6 +62,11 @@ export const MainContent = styled.aside`
     color: ${theme.colors.text.number};
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.weight.bold};
+
+    @media (${theme.breakpoints.lg}) {
+      justify-content: space-around;
+      height: 100%;
+    }
 
     h3 {
       color: ${theme.colors.text.white};

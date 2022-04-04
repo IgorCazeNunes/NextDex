@@ -18,9 +18,11 @@ const PokemonCard = ({ id, name, types, image }: IPokemonCardProps) => {
     <S.Container>
       <S.Content type={types[0]} data-testid={`PokemonCard-${name}`}>
         <S.MainContent>
-          <span>#{id}</span>
+          <div>
+            <span>#{id}</span>
 
-          <h3>{name}</h3>
+            <h3>{name}</h3>
+          </div>
 
           <ul>
             {types.map((type) => (
