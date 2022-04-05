@@ -10,7 +10,8 @@ module.exports = {
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   moduleNameMapper: {
-    '\\.svg$': '<rootDir>/__mocks__/svg.js',
+    '\\.svg$': '<rootDir>/__mocks__/img.js',
+    '\\.png$': '<rootDir>/__mocks__/img.js',
   },
   modulePaths: ['<rootDir>/src'],
 };
