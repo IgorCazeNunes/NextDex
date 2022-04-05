@@ -15,12 +15,13 @@ export const Container = styled.ul`
       grid-template-columns: repeat(2, 1fr);
 
       margin: 0;
-      width: 100%;
+      width: min(100%, 82rem);
     }
 
     @media (${theme.breakpoints.lg}) {
       gap: ${theme.spacings.xsmall} ${theme.spacings.medium};
       grid-template-columns: repeat(3, 1fr);
+      width: 100%;
     }
   `}
 `;
