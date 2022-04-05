@@ -83,6 +83,8 @@ export const MainContent = styled.aside`
       font-weight: ${theme.font.weight.bold};
 
       margin-bottom: ${theme.spacings.xxsmall};
+
+      text-transform: capitalize;
     }
 
     ul {
