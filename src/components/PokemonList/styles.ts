@@ -20,6 +20,10 @@ export const Container = styled.ul`
 
     @media (${theme.breakpoints.lg}) {
       gap: ${theme.spacings.xsmall} ${theme.spacings.medium};
+      width: min(100%, 92rem);
+    }
+
+    @media (${theme.breakpoints.xl}) {
       grid-template-columns: repeat(3, 1fr);
       width: 100%;
     }
