@@ -2,52 +2,13 @@ import { renderWithTheme } from 'utils/tests/helper';
 
 import { screen } from '@testing-library/react';
 
-import { IPokemonCardProps } from 'components/PokemonCard';
+import { pokemonList } from 'utils/tests/mocks';
 
 import PokemonList from '.';
 
 describe('<PokemonList />', () => {
-  const listMock: IPokemonCardProps[] = [
-    {
-      id: '001',
-      name: 'charizard',
-      types: ['fire', 'flying'],
-      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png',
-    },
-    {
-      id: '002',
-      name: 'charizard',
-      types: ['fire', 'flying'],
-      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png',
-    },
-    {
-      id: '003',
-      name: 'charizard',
-      types: ['fire', 'flying'],
-      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png',
-    },
-    {
-      id: '004',
-      name: 'charizard',
-      types: ['fire', 'flying'],
-      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png',
-    },
-    {
-      id: '005',
-      name: 'charizard',
-      types: ['fire', 'flying'],
-      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png',
-    },
-    {
-      id: '006',
-      name: 'charizard',
-      types: ['fire', 'flying'],
-      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png',
-    },
-  ];
-
   it('Should render List with correct grid responsiviness', () => {
-    renderWithTheme(<PokemonList list={listMock} />);
+    renderWithTheme(<PokemonList list={pokemonList} />);
 
     const SPokemonList = screen.getByTestId('PokemonList');
 
