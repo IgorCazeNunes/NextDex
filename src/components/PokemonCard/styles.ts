@@ -77,9 +77,6 @@ export const MainContent = styled.aside`
       height: 100%;
     }
 
-    .dottedSmall {
-    }
-
     h3 {
       color: ${theme.colors.text.white};
       font-size: ${theme.font.sizes.large};
