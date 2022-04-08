@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import { TypeBadge } from 'components';
 
@@ -39,4 +39,4 @@ const PokemonCard = ({ id, name, types, image }: IPokemonCardProps) => {
   );
 };
 
-export default PokemonCard;
+export default memo(PokemonCard);

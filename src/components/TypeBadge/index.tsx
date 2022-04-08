@@ -1,4 +1,5 @@
 import { TypeIcon } from 'components';
+import { memo } from 'react';
 
 import * as S from './styles';
 
@@ -34,4 +35,4 @@ const TypeBadge = ({ type }: ITypeBadgeProps) => (
   </S.Container>
 );
 
-export default TypeBadge;
+export default memo(TypeBadge);
