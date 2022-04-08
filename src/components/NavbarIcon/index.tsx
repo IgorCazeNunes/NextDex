@@ -2,7 +2,7 @@ import FilterSvg from 'assets/vectors/icons/filter.svg';
 import SortSvg from 'assets/vectors/icons/sort.svg';
 import GenerationSvg from 'assets/vectors/icons/generation.svg';
 
-type TNavbarIcon = 'filter' | 'sort' | 'generation';
+export type TNavbarIcon = 'filter' | 'sort' | 'generation';
 
 interface INavbarIconProps {
   icon: TNavbarIcon;
