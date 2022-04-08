@@ -8,19 +8,19 @@ interface INavbarIconProps {
   icon: TNavbarIcon;
 }
 
-const NavbarIcon = ({ icon }: INavbarIconProps) => {
-  const Svg = {
-    filter: (
-      <FilterSvg
-        data-testid="NavbarIcon-filter"
-        role="img"
-        aria-label="Filter Icon"
-      />
-    ),
-    sort: <SortSvg role="img" aria-label="Sort Icon" />,
-    generation: <GenerationSvg role="img" aria-label="Generation Icon" />,
-  };
+const Svg = {
+  filter: (
+    <FilterSvg
+      data-testid="NavbarIcon-filter"
+      role="img"
+      aria-label="Filter Icon"
+    />
+  ),
+  sort: <SortSvg role="img" aria-label="Sort Icon" />,
+  generation: <GenerationSvg role="img" aria-label="Generation Icon" />,
+};
 
+const NavbarIcon = ({ icon }: INavbarIconProps) => {
   return Svg[icon];
 };
 
