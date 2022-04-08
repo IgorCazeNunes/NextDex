@@ -8,7 +8,9 @@
     "reactdex",
     "svgr",
     "testid",
+    "xlarge",
     "xsmall",
+    "xxlarge",
     "xxsmall"
   ],
 }
