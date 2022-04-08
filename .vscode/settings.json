@@ -4,8 +4,11 @@
     "source.fixAll.eslint": true
   },
   "cSpell.words": [
+    "pokemon",
     "reactdex",
     "svgr",
-    "testid"
+    "testid",
+    "xsmall",
+    "xxsmall"
   ],
 }
