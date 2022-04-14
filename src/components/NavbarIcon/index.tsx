@@ -10,7 +10,6 @@ interface INavbarIconProps {
 }
 
 const Svg = {
-  pokeball: <PokeballSvg role="img" aria-label="Pokeball Icon" />,
   filter: (
     <FilterSvg
       data-testid="NavbarIcon-filter"
@@ -18,8 +17,15 @@ const Svg = {
       aria-label="Filter Icon"
     />
   ),
-  sort: <SortSvg role="img" aria-label="Sort Icon" />,
   generation: <GenerationSvg role="img" aria-label="Generation Icon" />,
+  pokeball: (
+    <PokeballSvg
+      data-testid="NavbarIcon-pokeball"
+      role="img"
+      aria-label="Pokeball Icon"
+    />
+  ),
+  sort: <SortSvg role="img" aria-label="Sort Icon" />,
 };
 
 const NavbarIcon = ({ icon }: INavbarIconProps) => {
