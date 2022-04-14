@@ -1,12 +1,14 @@
 import * as S from './styles';
 
 export interface IResponsiveContainer {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 }
 
 const ResponsiveContainer = ({ children }: IResponsiveContainer) => {
   return (
-    <S.Container data-testid="ResponsiveContainer">{children}</S.Container>
+    <S.ResponsiveContainer data-testid="ResponsiveContainer">
+      {children}
+    </S.ResponsiveContainer>
   );
 };
 

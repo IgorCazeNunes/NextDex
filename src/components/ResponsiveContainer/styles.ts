@@ -1,10 +1,8 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+export const ResponsiveContainer = styled.div`
   ${({ theme }) => css`
     display: flex;
-    align-items: center;
-    justify-content: center;
 
     padding: 0 ${theme.spacings.xxsmall};
 
