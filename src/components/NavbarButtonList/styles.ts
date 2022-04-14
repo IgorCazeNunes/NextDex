@@ -5,9 +5,13 @@ export const Container = styled.ul`
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: ${theme.spacings.small};
+    gap: ${theme.spacings.xsmall};
 
     list-style: none;
+
+    @media (${theme.breakpoints.sm}) {
+      gap: ${theme.spacings.small};
+    }
 
     @media (${theme.breakpoints.lg}) {
       gap: ${theme.spacings.large};
