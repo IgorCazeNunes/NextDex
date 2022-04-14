@@ -7,7 +7,11 @@ describe('<NavbarButtonList />', () => {
     const { container } = renderWithTheme(<NavbarButtonList />);
 
     expect(container.firstChild).toHaveStyle({
-      gap: '2.4rem',
+      gap: '1.6rem',
+    });
+
+    expect(container.firstChild).toHaveStyleRule('gap', '2.4rem', {
+      media: '(min-width: 414px)',
     });
 
     expect(container.firstChild).toHaveStyleRule('gap', '4.0rem', {
