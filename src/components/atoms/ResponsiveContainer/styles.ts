@@ -16,10 +16,6 @@ export const ResponsiveContainer = styled.div`
       padding: 0 ${theme.spacings.medium};
     }
 
-    @media (${theme.breakpoints.lg}) {
-      padding: 0 ${theme.spacings.xxsmall};
-    }
-
     @media (${theme.breakpoints.xl}) {
       padding: 0;
     }
