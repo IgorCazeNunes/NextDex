@@ -1,4 +1,4 @@
-import { ResponsiveContainer } from 'components/ResponsiveContainer/styles';
+import { ResponsiveContainer } from 'components/atoms/ResponsiveContainer/styles';
 
 import styled from 'styled-components';
 

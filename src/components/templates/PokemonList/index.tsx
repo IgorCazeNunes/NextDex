@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { PokemonCard } from 'components';
-import { IPokemonCardProps } from 'components/PokemonCard';
+import { IPokemonCardProps } from 'components/organisms/PokemonCard';
 
 import * as S from './styles';
 

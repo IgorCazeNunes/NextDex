@@ -1,5 +1,5 @@
 import { NavbarIcon } from 'components';
-import { TNavbarIcon } from 'components/NavbarIcon';
+import { TNavbarIcon } from 'components/atoms/NavbarIcon';
 
 import * as S from './styles';
 

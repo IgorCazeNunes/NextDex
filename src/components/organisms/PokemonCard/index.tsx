@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 
 import { TypeBadge } from 'components';
 
-import { TPokemonType } from 'components/TypeBadge';
+import { TPokemonType } from 'components/molecules/TypeBadge';
 
 import * as S from './styles';
 

@@ -3,7 +3,7 @@ import pokeball from 'assets/imgs/pokeball-white.png';
 
 import styled, { css } from 'styled-components';
 
-import { TPokemonType } from 'components/TypeBadge';
+import { TPokemonType } from 'components/molecules/TypeBadge';
 
 export const Container = styled.li`
   ${({ theme }) => css`

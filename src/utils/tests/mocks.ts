@@ -1,4 +1,4 @@
-import { IPokemonCardProps } from 'components/PokemonCard';
+import { IPokemonCardProps } from 'components/organisms/PokemonCard';
 
 const pokemonList: IPokemonCardProps[] = [
   {

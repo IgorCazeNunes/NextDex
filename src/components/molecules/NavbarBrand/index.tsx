@@ -1,4 +1,4 @@
-import NavbarIcon from 'components/NavbarIcon';
+import NavbarIcon from 'components/atoms/NavbarIcon';
 
 import * as S from './styles';
 

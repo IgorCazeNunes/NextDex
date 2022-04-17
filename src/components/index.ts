@@ -1,12 +1,12 @@
-import NavbarIcon from './NavbarIcon';
-import NavbarButton from './NavbarButton';
-import NavbarButtonList from './NavbarButtonList';
-import PokemonCard from './PokemonCard';
-import PokemonList from './PokemonList';
-import PokemonListSection from './PokemonListSection';
-import ResponsiveContainer from './ResponsiveContainer';
-import TypeBadge from './TypeBadge';
-import TypeIcon from './TypeIcon';
+import NavbarIcon from './atoms/NavbarIcon';
+import NavbarButton from './molecules/NavbarButton';
+import NavbarButtonList from './organisms/NavbarButtonList';
+import PokemonCard from './organisms/PokemonCard';
+import PokemonList from './templates/PokemonList';
+import PokemonListSection from './templates/PokemonListSection';
+import ResponsiveContainer from './atoms/ResponsiveContainer';
+import TypeBadge from './molecules/TypeBadge';
+import TypeIcon from './atoms/TypeBadgeIcon';
 
 export {
   NavbarIcon,

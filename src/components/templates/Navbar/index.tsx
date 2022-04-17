@@ -1,6 +1,6 @@
 import { NavbarButtonList, ResponsiveContainer } from 'components';
 
-import NavbarBrand from 'components/NavbarBrand';
+import NavbarBrand from 'components/molecules/NavbarBrand';
 
 import * as S from './styles';
 

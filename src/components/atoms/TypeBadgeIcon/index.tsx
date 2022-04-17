@@ -17,7 +17,7 @@ import RockSvg from 'assets/vectors/types/rock.svg';
 import SteelSvg from 'assets/vectors/types/steel.svg';
 import WaterSvg from 'assets/vectors/types/water.svg';
 
-import { TPokemonType } from 'components/TypeBadge';
+import { TPokemonType } from 'components/molecules/TypeBadge';
 
 const svgProps = {
   role: 'img',
@@ -28,7 +28,7 @@ interface IIconProps {
   type: TPokemonType;
 }
 
-const TypeIcon = ({ type }: IIconProps) => {
+const TypeBadgeIcon = ({ type }: IIconProps) => {
   const Svg = {
     bug: <BugSvg data-testid="TypeIcon-bug" {...svgProps} />,
     dark: <DarkSvg {...svgProps} />,
@@ -53,4 +53,4 @@ const TypeIcon = ({ type }: IIconProps) => {
   return Svg[type] || Svg['normal'];
 };
 
-export default TypeIcon;
+export default TypeBadgeIcon;

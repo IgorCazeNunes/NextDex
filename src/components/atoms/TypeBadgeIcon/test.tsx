@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import { TPokemonType } from 'components/TypeBadge';
+import { TPokemonType } from 'components/molecules/TypeBadge';
 
 import TypeIcon from '.';
 

@@ -2,7 +2,7 @@ import { renderWithTheme } from 'utils/tests/helper';
 
 import { screen } from '@testing-library/react';
 
-import { TPokemonType } from 'components/TypeBadge';
+import { TPokemonType } from 'components/molecules/TypeBadge';
 
 import PokemonCard from '.';
 
