@@ -7,6 +7,14 @@ import { pokemonList } from 'utils/tests/mocks';
 import PokemonList from '.';
 
 describe('<PokemonList />', () => {
+  it('Should render Section with components: ResponsiveContainer and PokemonList', () => {
+    renderWithTheme(<PokemonList list={pokemonList} />);
+
+    expect(screen.getByTestId('ResponsiveContainer')).toBeInTheDocument();
+
+    expect(screen.getByTestId('PokemonList')).toBeInTheDocument();
+  });
+
   it('Should render List with correct grid responsiviness', () => {
     renderWithTheme(<PokemonList list={pokemonList} />);
 

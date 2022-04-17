@@ -1,6 +1,20 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.ul`
+import { ResponsiveContainer } from 'components/atoms/ResponsiveContainer/styles';
+
+export const Container = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ${ResponsiveContainer} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+export const Content = styled.ul`
   ${({ theme }) => css`
     display: grid;
     gap: ${theme.spacings.xxsmall} 0;
