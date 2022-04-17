@@ -16,5 +16,7 @@ export const Container = styled.ul`
     @media (${theme.breakpoints.lg}) {
       gap: ${theme.spacings.large};
     }
+
+    transition: gap 0.5s;
   `}
 `;

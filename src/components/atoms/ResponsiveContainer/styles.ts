@@ -19,5 +19,7 @@ export const ResponsiveContainer = styled.div`
     @media (${theme.breakpoints.xl}) {
       padding: 0;
     }
+
+    transition: padding 0.5s;
   `}
 `;

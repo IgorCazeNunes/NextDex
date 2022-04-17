@@ -41,5 +41,7 @@ export const Content = styled.ul`
       grid-template-columns: repeat(3, 1fr);
       width: 100%;
     }
+
+    transition: all 0.5s;
   `}
 `;
