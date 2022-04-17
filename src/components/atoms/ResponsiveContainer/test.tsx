@@ -26,10 +26,6 @@ describe('<ResponsiveContainer />', () => {
       media: '(min-width: 768px)',
     });
 
-    expect(SContainer).toHaveStyleRule('padding', '0 0.8rem', {
-      media: '(min-width: 1024px)',
-    });
-
     expect(SContainer).toHaveStyleRule('padding', '0', {
       media: '(min-width: 1366px)',
     });
