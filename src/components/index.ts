@@ -1,3 +1,4 @@
+import Navbar from './templates/Navbar';
 import NavbarIcon from './atoms/NavbarIcon';
 import NavbarButton from './molecules/NavbarButton';
 import NavbarButtonList from './organisms/NavbarButtonList';
@@ -8,6 +9,7 @@ import TypeBadge from './molecules/TypeBadge';
 import TypeIcon from './atoms/TypeBadgeIcon';
 
 export {
+  Navbar,
   NavbarIcon,
   NavbarButton,
   NavbarButtonList,
